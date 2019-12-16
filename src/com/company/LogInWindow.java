@@ -17,6 +17,8 @@ public class LogInWindow extends JFrame{
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.pack();
         this.setSize(250, 220);
+        this.setLocation(200, 200);
+        this.setVisible(true);
         enterButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -26,7 +28,7 @@ public class LogInWindow extends JFrame{
         signInButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                RegistrationWindow register = new RegistrationWindow(getLocation());
             }
         });
     }
