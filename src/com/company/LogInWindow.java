@@ -11,7 +11,7 @@ public class LogInWindow extends JFrame{
     private JButton signInButton;
     private JButton enterButton;
 
-    public LogInWindow(){
+    public LogInWindow(UserInfo users){
         super("Вход");
         this.setContentPane(mainPanel);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -22,13 +22,23 @@ public class LogInWindow extends JFrame{
         enterButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                int index = users.logIn(loginField.getText(), new String(passwordField.getPassword()));
+                if(index == -1)
+                    JOptionPane.showMessageDialog(mainPanel, "Логин или пароль введены неправильно");
+                else if(index == -2){
+                    adminWindow admin = new adminWindow(users.getAdmin(), getLocation());
+                    dispose();
+                }
+                else{
+                    userWindow user = new userWindow(users.getClient(index), getLocation());
+                    dispose();
+                }
             }
         });
         signInButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                RegistrationWindow register = new RegistrationWindow(getLocation());
+                RegistrationWindow register = new RegistrationWindow(users, getLocation());
             }
         });
     }

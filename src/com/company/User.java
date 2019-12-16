@@ -25,10 +25,6 @@ public class User {
         return password;
     }
 
-    public void setLogin(String login) {
-        this.login = login;
-    }
-
     public void setName(String name) {
         this.name = name;
     }

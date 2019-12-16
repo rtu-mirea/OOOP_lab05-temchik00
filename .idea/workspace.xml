@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a34fce4-529a-4ea9-af2e-99046bdd6236" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/LogInWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/LogInWindow$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/LogInWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/LogInWindow$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/LogInWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/LogInWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/RegistrationWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/RegistrationWindow$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/RegistrationWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/RegistrationWindow$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/RegistrationWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/RegistrationWindow.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/LogInWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/LogInWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/RegistrationWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/RegistrationWindow.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/RegistrationWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/RegistrationWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,7 +34,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1V4valsSJuUxechV1wg7ITSoEJr" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
