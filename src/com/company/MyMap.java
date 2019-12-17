@@ -175,7 +175,7 @@ public class MyMap {
                         toVisit.add(link.getKey());
                         visited.add(link.getKey().name);
                     }
-                    writer.write(tmp.name + " " + link.getKey().name + " " + link.getValue());
+                    writer.write(tmp.name + " " + link.getKey().name + " " + link.getValue() + "\n");
                 }
             }
             writer.close();
@@ -188,6 +188,7 @@ public class MyMap {
     private ArrayList<Graph> graphs;
     public HashSet<String> allNodes;
     public MyMap(){
+        allNodes = new HashSet<String>(0);
         graphs = new ArrayList<Graph>(0);
     }
 

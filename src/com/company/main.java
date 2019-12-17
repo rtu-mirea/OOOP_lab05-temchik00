@@ -7,9 +7,5 @@ public class main {
         UserInfo userInfo = new UserInfo();
         MyMap map = new MyMap();
         JFrame t = new LogInWindow(userInfo, map);
-        try {
-            userInfo.saveToFile();
-            map.save();
-        }catch (Exception e){System.out.println(e);}
     }
 }

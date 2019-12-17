@@ -26,7 +26,7 @@ public class LogInWindow extends JFrame{
                 if(index == -1)
                     JOptionPane.showMessageDialog(mainPanel, "Логин или пароль введены неправильно");
                 else if(index == -2){
-                    adminWindow admin = new adminWindow(users.getAdmin(), map, getLocation());
+                    adminWindow admin = new adminWindow(users, map, getLocation());
                     dispose();
                 }
                 else{

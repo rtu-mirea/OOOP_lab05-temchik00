@@ -17,12 +17,15 @@ public class RegistrationWindow extends JFrame {
 
     public RegistrationWindow(UserInfo userInfo, MyMap map, Point pos){
         super("Регистрация");
-        comboBox = new JComboBox(map.getAllNodes());
         this.setContentPane(mainPanel);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         this.pack();
         this.setSize(260, 380);
         this.setLocation(pos);
+        String[] content = map.getAllNodes();
+        for(String node : content){
+            comboBox.addItem(node);
+        }
         this.setVisible(true);
         OKButton.addActionListener(new ActionListener() {
             @Override
@@ -37,6 +40,7 @@ public class RegistrationWindow extends JFrame {
                 else{
                     if(!userInfo.hasUser(loginField.getText())) {
                         userInfo.addClient(new Client(nameField.getText(), loginField.getText(), pass, comboBox.getSelectedItem() + ""));
+                        dispose();
                     }
                     else{
                         JOptionPane.showMessageDialog(mainPanel, "Данный логин уже занят");
