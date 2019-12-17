@@ -3,19 +3,28 @@
   <component name="ChangeListManager">
     <list default="true" id="0a34fce4-529a-4ea9-af2e-99046bdd6236" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/Client.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/LogInWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/LogInWindow$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/LogInWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/LogInWindow$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/LogInWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/LogInWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/MyMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/MyMap.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/RegistrationWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/RegistrationWindow$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/RegistrationWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/RegistrationWindow$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/RegistrationWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/RegistrationWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/UserInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/adminWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/adminWindow.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/userWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/userWindow.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/LogInWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/LogInWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/RegistrationWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/RegistrationWindow.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/MyMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/MyMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/RegistrationWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/RegistrationWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/adminWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/adminWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/userWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/userWindow.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +113,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

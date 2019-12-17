@@ -15,8 +15,9 @@ public class RegistrationWindow extends JFrame {
     private JButton cancelButton;
     private JComboBox comboBox;
 
-    public RegistrationWindow(UserInfo userInfo, Point pos){
+    public RegistrationWindow(UserInfo userInfo, MyMap map, Point pos){
         super("Регистрация");
+        comboBox = new JComboBox(map.getAllNodes());
         this.setContentPane(mainPanel);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         this.pack();
@@ -35,7 +36,7 @@ public class RegistrationWindow extends JFrame {
                 }
                 else{
                     if(!userInfo.hasUser(loginField.getText())) {
-                        // TODO: add user
+                        userInfo.addClient(new Client(nameField.getText(), loginField.getText(), pass, comboBox.getSelectedItem() + ""));
                     }
                     else{
                         JOptionPane.showMessageDialog(mainPanel, "Данный логин уже занят");

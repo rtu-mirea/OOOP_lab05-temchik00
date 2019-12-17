@@ -6,7 +6,7 @@ import java.awt.*;
 public class userWindow extends JFrame{
     private JButton exitButton;
     private JPanel mainPanel;
-    public userWindow(User user, Point pos){
+    public userWindow(User user, MyMap map, Point pos){
         this.setContentPane(mainPanel);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.pack();

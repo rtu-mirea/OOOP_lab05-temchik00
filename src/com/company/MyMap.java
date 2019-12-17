@@ -1,7 +1,11 @@
 package com.company;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.security.cert.TrustAnchor;
 import java.util.*;
+import java.util.logging.FileHandler;
 
 public class MyMap {
     private class Graph{
@@ -155,10 +159,46 @@ public class MyMap {
                 this.find(point2).addLink(second.find(point1), weight);
             this.vertices.addAll(second.vertices);
         }
+
+        public void save(int index) throws Exception {
+            File file = new File("savedInfo\\graph\\" + index);
+            file.createNewFile();
+            FileWriter writer = new FileWriter(file, false);
+            ArrayDeque<Node> toVisit = new ArrayDeque<Node>(0);
+            HashSet<String> visited = new HashSet<String>(0);
+            toVisit.add(start);
+            visited.add(start.name);
+            while (!toVisit.isEmpty()){
+                Node tmp = toVisit.pop();
+                for(Map.Entry<Node, Integer> link: tmp.links.entrySet()){
+                    if(!visited.contains(link.getKey().name)) {
+                        toVisit.add(link.getKey());
+                        visited.add(link.getKey().name);
+                    }
+                    writer.write(tmp.name + " " + link.getKey().name + " " + link.getValue());
+                }
+            }
+            writer.close();
+        }
+
+        public void load(int index){
+
+        }
     }
-    ArrayList<Graph> graphs;
+    private ArrayList<Graph> graphs;
+    public HashSet<String> allNodes;
     public MyMap(){
         graphs = new ArrayList<Graph>(0);
+    }
+
+    public String[] getAllNodes(){
+        String[] ans = new String[allNodes.size()];
+        int i = 0;
+        for(String node : allNodes){
+            ans[i] = node;
+            ++i;
+        }
+        return ans;
     }
 
     private int find(String nodeName){
@@ -169,6 +209,8 @@ public class MyMap {
     }
 
     public void addPath(String from, String to, int weight){
+        allNodes.add(from);
+        allNodes.add(to);
         int indFirst = find(from);
         int indSecond = find(to);
         if( indFirst == -1 && indSecond == -1){
@@ -201,5 +243,15 @@ public class MyMap {
         if(ind1 != find(to) || ind1 == -1 || ind2 == -1)
             return null;
         return graphs.get(ind1).path(from, to);
+    }
+
+    public void save()throws Exception{
+        for(int i = 0; i < graphs.size(); ++i){
+            graphs.get(i).save(i);
+        }
+    }
+
+    public void load(){
+        // TODO: load
     }
 }
