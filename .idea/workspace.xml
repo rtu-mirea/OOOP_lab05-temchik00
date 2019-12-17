@@ -3,18 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="0a34fce4-529a-4ea9-af2e-99046bdd6236" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/LogInWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/LogInWindow$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/MyMap$Graph$MetaInf.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/MyMap$Graph$MetaInf.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/MyMap$Graph$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/MyMap$Graph$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/MyMap$Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/MyMap$Graph.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/MyMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/MyMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/RegistrationWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/RegistrationWindow$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/RegistrationWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/RegistrationWindow$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/RegistrationWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/RegistrationWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/adminWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/adminWindow.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-5(swing)/com/company/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/LogInWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/LogInWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/savedInfo/graph/0" beforeDir="false" afterPath="$PROJECT_DIR$/savedInfo/graph/0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/MyMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/MyMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/RegistrationWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/RegistrationWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/adminWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/adminWindow.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/adminWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/adminWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -119,6 +114,11 @@
           <url>file://$PROJECT_DIR$/src/com/company/RegistrationWindow.java</url>
           <line>24</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/MyMap.java</url>
+          <line>262</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

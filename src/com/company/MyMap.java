@@ -1,8 +1,6 @@
 package com.company;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.security.cert.TrustAnchor;
 import java.util.*;
 import java.util.logging.FileHandler;
@@ -181,8 +179,14 @@ public class MyMap {
             writer.close();
         }
 
-        public void load(int index){
-
+        public void load(int index) throws Exception {
+            File file = new File("savedInfo\\graph\\" + index);
+            BufferedReader reader = new BufferedReader(new FileReader(file));
+            String info = "";
+            while ((info = reader.readLine()) != null){
+                String[] parts = info.split(" ");
+                addPath(parts[0], parts[1], Integer.parseInt(parts[2]));
+            }
         }
     }
     private ArrayList<Graph> graphs;
@@ -253,6 +257,18 @@ public class MyMap {
     }
 
     public void load(){
-        // TODO: load
+        try {
+            File folder = new File("savedInfo\\graph\\");
+            File[] files = folder.listFiles();
+            graphs = new ArrayList<Graph>(0);
+            for (int i = 0; i < files.length; ++i) {
+                Graph tmp = new Graph();
+                tmp.load(i);
+                graphs.add(tmp);
+                allNodes.addAll(tmp.vertices);
+            }
+        }catch (Exception e){
+            System.out.println("Could not load from file");
+        }
     }
 }
