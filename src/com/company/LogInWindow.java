@@ -17,7 +17,7 @@ public class LogInWindow extends JFrame{
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.pack();
         this.setSize(250, 220);
-        this.setLocation(200, 200);
+        this.setLocation(400, 400);
         this.setVisible(true);
         enterButton.addActionListener(new ActionListener() {
             @Override
@@ -26,11 +26,11 @@ public class LogInWindow extends JFrame{
                 if(index == -1)
                     JOptionPane.showMessageDialog(mainPanel, "Логин или пароль введены неправильно");
                 else if(index == -2){
-                    adminWindow admin = new adminWindow(users, map, getLocation());
+                    AdminWindow admin = new AdminWindow(users, map, getLocation());
                     dispose();
                 }
                 else{
-                    userWindow user = new userWindow(users.getClient(index), map, getLocation());
+                    userWindow user = new userWindow(users, map, getLocation(), index);
                     dispose();
                 }
             }

@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class adminWindow extends JFrame{
+public class AdminWindow extends JFrame{
     private JPanel mainPanel;
     private JButton exitButton;
     private JTextField fromField;
@@ -15,7 +15,7 @@ public class adminWindow extends JFrame{
     private JButton changeButton;
     private JButton saveButton;
 
-    public adminWindow(UserInfo users, MyMap map, Point pos){
+    public AdminWindow(UserInfo users, MyMap map, Point pos){
         super("Панель админа");
         this.setContentPane(mainPanel);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -44,7 +44,7 @@ public class adminWindow extends JFrame{
         changeButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                ChangeWindow window = new ChangeWindow(users, -2, getLocation());
             }
         });
         exitButton.addActionListener(new ActionListener() {
