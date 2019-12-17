@@ -20,7 +20,6 @@ public class RegistrationWindow extends JFrame {
         this.setContentPane(mainPanel);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         this.pack();
-        this.setSize(260, 380);
         this.setLocation(pos);
         String[] content = map.getAllNodes();
         for(String node : content){

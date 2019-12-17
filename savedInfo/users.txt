@@ -1,2 +1,2 @@
 admin admin admin
-name login password asd
+name login password 1

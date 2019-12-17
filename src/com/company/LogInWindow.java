@@ -16,7 +16,6 @@ public class LogInWindow extends JFrame{
         this.setContentPane(mainPanel);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.pack();
-        this.setSize(250, 220);
         this.setLocation(400, 400);
         this.setVisible(true);
         enterButton.addActionListener(new ActionListener() {

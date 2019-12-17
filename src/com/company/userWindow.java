@@ -20,7 +20,6 @@ public class userWindow extends JFrame{
         this.setContentPane(mainPanel);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.pack();
-        this.setSize(620, 280);
         this.setLocation(pos);
         String[] content = map.getAllNodes();
         for(String node : content){
@@ -31,7 +30,7 @@ public class userWindow extends JFrame{
         changeButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                ChangeWindow window = new ChangeWindow(users, index, getLocation());
+                ChangeWindow window = new ChangeWindow(users, map, index, getLocation());
             }
         });
         exitButton.addActionListener(new ActionListener() {
@@ -49,7 +48,7 @@ public class userWindow extends JFrame{
                     return;
                 }
                 ArrayList<String> path = map.generateShortWay(users.getClient(index).getPlace() + "", toBox.getSelectedItem() + "");
-                if(path.size() == 0)
+                if(path == null || path.size() == 0)
                     JOptionPane.showMessageDialog(mainPanel, "Пути не существует");
                 else {
                     String ans = "Кратчайший путь: ";
@@ -68,7 +67,7 @@ public class userWindow extends JFrame{
                     return;
                 }
                 ArrayList<String> path = map.generateShortWay(fromBox.getSelectedItem() + "", toBox.getSelectedItem() + "");
-                if(path.size() == 0)
+                if(path == null || path.size() == 0)
                     JOptionPane.showMessageDialog(mainPanel, "Пути не существует");
                 else {
                     String ans = "Кратчайший путь: ";

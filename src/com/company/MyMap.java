@@ -160,6 +160,9 @@ public class MyMap {
 
         public void save(int index) throws Exception {
             File file = new File("savedInfo\\graph\\" + index);
+            if(file.exists()){
+                file.delete();
+            }
             file.createNewFile();
             FileWriter writer = new FileWriter(file, false);
             ArrayDeque<Node> toVisit = new ArrayDeque<Node>(0);
@@ -185,7 +188,7 @@ public class MyMap {
             String info = "";
             while ((info = reader.readLine()) != null){
                 String[] parts = info.split(" ");
-                addPath(parts[0], parts[1], Integer.parseInt(parts[2]));
+                addLink(parts[0], parts[1], Integer.parseInt(parts[2]));
             }
         }
     }
@@ -250,7 +253,7 @@ public class MyMap {
         return graphs.get(ind1).path(from, to);
     }
 
-    public void save()throws Exception{
+    public void save() throws Exception{
         for(int i = 0; i < graphs.size(); ++i){
             graphs.get(i).save(i);
         }

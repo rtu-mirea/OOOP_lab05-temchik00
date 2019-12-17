@@ -21,7 +21,6 @@ public class AdminWindow extends JFrame{
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.pack();
         this.setLocation(pos);
-        this.setSize(420, 320);
         this.setVisible(true);
         addPathButton.addActionListener(new ActionListener() {
             @Override
@@ -44,7 +43,7 @@ public class AdminWindow extends JFrame{
         changeButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                ChangeWindow window = new ChangeWindow(users, -2, getLocation());
+                ChangeWindow window = new ChangeWindow(users, map, -2, getLocation());
             }
         });
         exitButton.addActionListener(new ActionListener() {
